@@ -1,0 +1,16 @@
+generated: '2026-10-19'
+method: none
+source:
+- https://zapier.com/apps/chemours/integrations
+- https://n8n.io/integrations/chemours/
+- https://composio.dev/toolkits/chemours
+- https://monid.ai/tools/chemours
+checked:
+- https://composio.dev/toolkits/chemours
+- https://monid.ai/tools/chemours
+- https://n8n.io/integrations/chemours/
+- https://zapier.com/apps/chemours/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
