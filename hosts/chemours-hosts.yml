@@ -1,0 +1,44 @@
+generated: '2026-10-19'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 2
+  other_domain: 0
+  platform: 1
+  roles:
+  - other
+  - website
+hosts:
+- host: investors.chemours.com
+  found_by:
+  - pointer
+  types:
+  - InvestorRelations
+  serves: []
+  registrable_domain: chemours.com
+  role: other
+  relation: own
+- host: www.chemours.com
+  found_by:
+  - pointer
+  - vendor-detect
+  types:
+  - Website
+  - Careers
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: chemours.com
+  role: website
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform

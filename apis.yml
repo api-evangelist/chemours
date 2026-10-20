@@ -25,11 +25,47 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chemours.png
-description: 'Fortune 1000 company Chemours. Public API documentation has not yet been catalogued in the API Evangelist network.'
+description: 'The Chemours Company is a global chemistry company (NYSE: CC) that manufactures titanium dioxide (Ti-Pure), refrigerants and thermal management fluids (Opteon, Freon), fluoropolymers (Teflon, Nafion) and performance chemicals for industries including semiconductors, energy transition, automotive and construction. Its public website chemours.com covers brands, products, safety data sheet lookup, sustainability reporting and investor relations; no public developer program or API documentation was found.'
 created: '2026-05-05'
-modified: '2026-05-05'
+modified: '2026-10-19'
 specificationVersion: '0.23'
+tags:
+- Chemicals
+- Manufacturing
+- Fluoropolymers
+- Refrigerants
+- Titanium Dioxide
+- Fortune 1000
 common:
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/chemours
+- type: Hosts
+  url: hosts/chemours-hosts.yml
+- type: Vendors
+  url: vendors/chemours-vendors.yml
+- type: DomainSecurity
+  url: security/chemours-domain-security.yml
+- type: Website
+  url: https://www.chemours.com/en/
+- type: InvestorRelations
+  url: https://investors.chemours.com/investors-home/default.aspx
+- type: Careers
+  url: https://www.chemours.com/en/careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/chemours
 apis: []
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: Chemours is a chemicals manufacturer whose chemours.com site (Cloudflare-challenged to plain GETs, readable when rendered) offers brands, SDS lookup, sustainability and investor pages but no developer program, API docs, llms.txt or developer/api subdomain.
+  evidence:
+  - url: https://www.chemours.com/en/
+    status: 200
+  - url: https://www.chemours.com/llms.txt
+    status: 404
+  - url: https://www.chemours.com/.well-known/security.txt
+    status: 404
+  checked: '2026-10-19'
+x-enrichment:
+  date: '2026-10-19'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v5
